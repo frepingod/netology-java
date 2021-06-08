@@ -10,19 +10,12 @@ public class Calculator {
     BinaryOperator<Integer> minus = (x, y) -> x - y;
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
 
-    /*
-        Вылетает ArithmeticException при делении на ноль.
-        Решил проблему в Main классе, обернул код в try-catch.
-     */
+    //solution #1
     BinaryOperator<Integer> devide = (x, y) -> x / y;
+    //solution #2
+    //BinaryOperator<Integer> devide = (x, y) -> (y == 0) ? 0 : (x / y);
 
     UnaryOperator<Integer> pow = x -> x * x;
-
-    /*
-        Ошибки нет, все работает.
-        Даже переписав тернарный оператор на if-else, idea подсказала вернуться к этому варианту.
-        Но расставил скобочки для красоты и лучшего понимания.
-     */
     UnaryOperator<Integer> abs = x -> (x > 0) ? x : (x * -1);
 
     Predicate<Integer> isPositive = x -> x > 0;
