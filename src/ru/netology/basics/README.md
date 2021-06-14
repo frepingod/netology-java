@@ -53,3 +53,6 @@
 ### HW14. Коллекции TreeMap, TreeSet
 * [Пропущенные вызовы](homework14/task1)
 * [Система подбора кандидатов](homework14/task2)
+
+### Basics block diploma
+* [Конвертер в текстовую графику](javabasicsdiploma)
