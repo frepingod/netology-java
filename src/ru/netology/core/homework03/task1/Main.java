@@ -3,62 +3,49 @@ package ru.netology.core.homework03.task1;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
     private static final StringBuilder LOG = new StringBuilder();
     private static final String PATH = "D:/Programming/IdeaProjects/netology-java/src/ru/netology/core/homework03/Games";
 
+    private static final List<String> DIR_PATHS = Arrays.asList(
+            PATH + "/src", PATH + "/res", PATH + "/savegames", PATH + "/temp",
+            PATH + "/src/main", PATH + "/src/test",
+            PATH + "/res/drawables", PATH + "/res/vectors", PATH + "/res/icons"
+    );
+
+    private static final List<String> FILE_PATHS = Arrays.asList(
+            PATH + "/src/main/Main.java", PATH + "/src/main/Utils.java",
+            PATH + "/temp/temp.txt"
+    );
+
     public static void main(String[] args) {
-        File src = new File(PATH + "/src");
-        File res = new File(PATH + "/res");
-        File savegames = new File(PATH + "/savegames");
-        File temp = new File(PATH + "/temp");
-
-        writeToTheLog(src, src.mkdir());
-        writeToTheLog(res, res.mkdir());
-        writeToTheLog(savegames, savegames.mkdir());
-        writeToTheLog(temp, temp.mkdir());
-
-        File main = new File(src.getAbsolutePath() + "/main");
-        File test = new File(src.getAbsolutePath() + "/test");
-
-        writeToTheLog(main, main.mkdir());
-        writeToTheLog(test, test.mkdir());
-
-        File mainFile = new File(main.getAbsolutePath() + "/Main.java");
-        File utilsFile = new File(main.getAbsolutePath() + "/Utils.java");
-
-        try {
-            writeToTheLog(mainFile, mainFile.createNewFile());
-            writeToTheLog(utilsFile, utilsFile.createNewFile());
-        } catch (IOException e) {
-            e.printStackTrace();
+        for (String dirPath : DIR_PATHS) {
+            File dir = new File(dirPath);
+            writeToTheLog(dir, dir.mkdir());
         }
 
-        File drawables = new File(res.getAbsolutePath() + "/drawables");
-        File vectors = new File(res.getAbsolutePath() + "/vectors");
-        File icons = new File(res.getAbsolutePath() + "/icons");
-
-        writeToTheLog(drawables, drawables.mkdir());
-        writeToTheLog(vectors, vectors.mkdir());
-        writeToTheLog(icons, icons.mkdir());
-
-        File tempFile = new File(temp.getAbsolutePath() + "/temp.txt");
-
-        try {
-            writeToTheLog(tempFile, tempFile.createNewFile());
-        } catch (IOException e) {
-            e.printStackTrace();
+        for (String filePath : FILE_PATHS) {
+            File file = new File(filePath);
+            try {
+                writeToTheLog(file, file.createNewFile());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
-        writeToTheFile(tempFile);
+        writeToTheFile(new File(PATH + "/temp/temp.txt"));
     }
 
     private static void writeToTheLog(File file, boolean result) {
         LOG.append(file.isDirectory() ? "Каталог '" : "Файл '")
                 .append(file.getName())
-                .append(result ? "' СОЗДАН!" : "' НЕ СОЗДАН!, потому что уже существует!")
+                .append(result ? "' СОЗДАН!" : "' НЕ СОЗДАН!")
+                .append((!result && file.exists()) ? ", потому что уже существует!" : "")
+                .append((!result && !file.exists()) ? ", потому что неверно указан путь!" : "")
                 .append("\n");
     }
 
