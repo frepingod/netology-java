@@ -55,11 +55,8 @@ public class Main {
     }
 
     private static void removeNonZip(String path) {
-        File saveDir = new File(path);
-        for (File item : saveDir.listFiles()) {
-            if (!item.getName().endsWith("zip")) {
-                item.delete();
-            }
-        }
+        Arrays.stream(new File(path).listFiles())
+                .filter(item -> !item.getName().endsWith("zip"))
+                .forEach(File::delete);
     }
 }
