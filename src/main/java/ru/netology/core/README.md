@@ -12,3 +12,10 @@
 * [Установка](homework03/task1)
 * [Сохранение](homework03/task2)
 * [Загрузка](homework03/task3)
+
+### HW04. Сборка проектов. Maven и Gradle (распологается в отдельных репозиториях)
+* [Многомодульный проект на Maven](https://github.com/frepingod/netology-core-hw4.1-maven)
+* [Многомодульный проект на Gradle](https://github.com/frepingod/netology-core-hw4.2-gradle)
+
+### HW05. Работа с файлами CSV, XML, JSON
+* [CSV - JSON парсер, XML - JSON парсер, JSON парсер](homework05)
