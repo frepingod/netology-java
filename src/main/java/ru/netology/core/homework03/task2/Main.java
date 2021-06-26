@@ -8,7 +8,7 @@ import java.util.zip.ZipOutputStream;
 
 public class Main {
 
-    private static final String PATH = "D:/Programming/IdeaProjects/netology-java/src/ru/netology/core/homework03/Games/savegames";
+    private static final String PATH = "./src/main/java/ru/netology/core/homework03/Games/savegames";
 
     public static void main(String[] args) {
         GameProgress game1 = new GameProgress(90, 3, 80, 5.9);

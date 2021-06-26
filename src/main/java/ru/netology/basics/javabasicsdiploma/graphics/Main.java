@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         TextGraphicsConverter converter = new TextGraphicsConverterImpl();
 
-        PrintWriter fileWriter = new PrintWriter(new File("src/ru/netology/basics/javabasicsdiploma/converted-image.txt"));
+        PrintWriter fileWriter = new PrintWriter(new File("./src/main/java/ru/netology/basics/javabasicsdiploma/converted-image.txt"));
         converter.setMaxWidth(200);
         converter.setMaxHeight(300);
         fileWriter.write(converter.convert("https://proprikol.ru/wp-content/uploads/2020/10/kartinki-ne-grusti-1.jpg")); //example

@@ -18,4 +18,4 @@
 * [Многомодульный проект на Gradle](https://github.com/frepingod/netology-core-hw4.2-gradle)
 
 ### HW05. Работа с файлами CSV, XML, JSON
-* [CSV - JSON парсер, XML - JSON парсер, JSON парсер](homework05)
+* [CSV - JSON парсер. XML - JSON парсер. JSON парсер](homework05)

@@ -9,7 +9,7 @@ import java.util.List;
 public class Main {
 
     private static final StringBuilder LOG = new StringBuilder();
-    private static final String PATH = "D:/Programming/IdeaProjects/netology-java/src/ru/netology/core/homework03/Games";
+    private static final String PATH = "./src/main/java/ru/netology/core/homework03/Games";
 
     private static final List<String> DIR_PATHS = Arrays.asList(
             PATH + "/src", PATH + "/res", PATH + "/savegames", PATH + "/temp",

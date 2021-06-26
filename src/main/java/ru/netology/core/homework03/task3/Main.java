@@ -8,7 +8,7 @@ import java.util.zip.ZipInputStream;
 
 public class Main {
 
-    private static final String PATH = "D:/Programming/IdeaProjects/netology-java/src/ru/netology/core/homework03/Games/savegames";
+    private static final String PATH = "./src/main/java/ru/netology/core/homework03/Games/savegames";
 
     public static void main(String[] args) {
         openZip(PATH + "/savegames.zip", PATH);

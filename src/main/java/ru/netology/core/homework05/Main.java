@@ -24,7 +24,7 @@ import java.util.List;
 
 public class Main {
 
-    private static final String PATH = "D:/Programming/IdeaProjects/netology-java/src/main/java/ru/netology/core/homework05/data/";
+    private static final String PATH = "./src/main/java/ru/netology/core/homework05/data/";
 
     public static void main(String[] args) {
         //task1
