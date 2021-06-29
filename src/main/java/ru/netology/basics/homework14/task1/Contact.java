@@ -1,5 +1,7 @@
 package ru.netology.basics.homework14.task1;
 
+import java.util.Objects;
+
 public class Contact {
 
     private String name;
@@ -44,6 +46,19 @@ public class Contact {
 
     public void setGroup(Group group) {
         this.group = group;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Contact contact = (Contact) o;
+        return Objects.equals(name, contact.name) && Objects.equals(surname, contact.surname) && Objects.equals(phone, contact.phone) && group == contact.group;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, phone, group);
     }
 
     @Override

@@ -19,3 +19,6 @@
 
 ### HW05. Работа с файлами CSV, XML, JSON
 * [CSV - JSON парсер. XML - JSON парсер. JSON парсер](homework05)
+
+### HW06. Тестирование кода и Unit-тесты
+* Использование JUnit + Hamcrest (см. тесты для HW14.1 блока BASICS)

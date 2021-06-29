@@ -45,6 +45,14 @@ public class Contacts {
         return true;
     }
 
+    public void clear() {
+        contacts.clear();
+    }
+
+    public int size() {
+        return contacts.size();
+    }
+
     @Override
     public String toString() {
         StringBuilder out = new StringBuilder("Список контактов:\n");
