@@ -21,4 +21,7 @@
 * [CSV - JSON парсер. XML - JSON парсер. JSON парсер](homework05)
 
 ### HW06. Тестирование кода и Unit-тесты
-* Использование JUnit + Hamcrest (см. тесты для HW14.1 блока BASICS)
+* [Использование JUnit + Hamcrest](https://github.com/frepingod/netology-java/blob/main/src/test/java/ru/netology/basics/homework14/task1/ContactsTest.java)
+
+### HW08. Основы работы с сетью. Модель OSI
+* [Клиент-серверное приложение с рюшечками](homework08)
