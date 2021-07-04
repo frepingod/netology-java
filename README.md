@@ -1,3 +1,5 @@
+![](main_netology_logo.png)
+
 # Домашние задания по курсу «Java-разработчик»
 
 ## [Блок №1. «Основы Java»](src/main/java/ru/netology/basics)
