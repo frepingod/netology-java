@@ -20,8 +20,17 @@
 ### HW05. Работа с файлами CSV, XML, JSON
 * [CSV - JSON парсер. XML - JSON парсер. JSON парсер](homework05)
 
-### HW06. Тестирование кода и Unit-тесты
+### HW06. Тестирование кода и Unit-тесты (см. тесты для HW14.1 блока BASICS)
 * [Использование JUnit + Hamcrest](https://github.com/frepingod/netology-java/blob/main/src/test/java/ru/netology/basics/homework14/task1/ContactsTest.java)
+
+### HW07. Тестирование программы. Mockito
+Тестирование сервиса отправки сообщений
+* [main](homework07/task1)
+* [test](https://github.com/frepingod/netology-java/blob/main/src/test/java/ru/netology/core/homework07/task1)
+
+Тестирование сервиса медицинских показаний
+* [main](homework07/task2)
+* [test](https://github.com/frepingod/netology-java/blob/main/src/test/java/ru/netology/core/homework07/task2/service/medical/MedicalServiceImplTest.java)
 
 ### HW08. Основы работы с сетью. Модель OSI
 * [Клиент-серверное приложение с рюшечками](homework08)
