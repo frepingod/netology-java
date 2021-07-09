@@ -38,18 +38,9 @@ public class Main {
          * How to get a preview from YouTube
          * http://shpargalkablog.ru/2013/06/youtube.html
          */
-        String nasaUrl = (nasa.getUrl().endsWith(".jpg") && nasa.getMediaType().equals("image")) ?
+        String nasaUrl = nasa.getMediaType().equals("image") ?
                 nasa.getUrl() :
                 "https://img.youtube.com/vi/" + nasa.getUrl().split("watch\\?v=")[1] + "/maxresdefault.jpg";
-
-        /**
-         * С целью демонстрации работоспособности скачивания превью с ютуб видео, был создан нижеуказанный захардкоженный url
-         * (при изменении ссылки на другое ютуб видео будет скачиваться соответствующий новому видео превью).
-         * Продемонстрировать работу тернарного оператора, к сожалению, не выйдет, потому что сегодня от NASA получена именно картинка
-         */
-//        String nasaUrl = "https://img.youtube.com/vi/"
-//                + "https://www.youtube.com/watch?v=JMJXvsCLu6s".split("watch\\?v=")[1]
-//                + "/maxresdefault.jpg";
 
         CloseableHttpResponse nasaResponse = getResponse(httpClient, nasaUrl);
 
