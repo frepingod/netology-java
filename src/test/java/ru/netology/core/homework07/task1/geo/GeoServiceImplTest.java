@@ -2,7 +2,7 @@ package ru.netology.core.homework07.task1.geo;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.CsvSource;
 import ru.netology.core.homework07.task1.entity.Country;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,10 +12,8 @@ class GeoServiceImplTest {
     private final GeoService geoService = new GeoServiceImpl();
 
     @ParameterizedTest
-    @ValueSource(strings = {GeoServiceImpl.MOSCOW_IP, GeoServiceImpl.NEW_YORK_IP})
-    void byIp(String ip) {
-        Country country = ip.startsWith("172.") ? Country.RUSSIA : Country.USA;
-        assertNotNull(geoService.byIp(ip));
+    @CsvSource({GeoServiceImpl.LOCALHOST + ",", GeoServiceImpl.MOSCOW_IP + ",RUSSIA", GeoServiceImpl.NEW_YORK_IP + ",USA"})
+    void byIp(String ip, Country country) {
         assertEquals(geoService.byIp(ip).getCountry(), country);
     }
 
