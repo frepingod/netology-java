@@ -1,7 +1,8 @@
 package ru.netology.core.homework07.task1.sender;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mockito;
 import ru.netology.core.homework07.task1.entity.Country;
 import ru.netology.core.homework07.task1.entity.Location;
@@ -19,8 +20,8 @@ class MessageSenderTest {
     private static final String MESSAGE_RUSSIA = "ПРИВЕТ МОЙ ДОРОГОЙ ТОВАРИЩ";
     private static final String MESSAGE_USA = "HELLO MY DEAR COMRADE";
 
-    private static final Map<String, String> MAP_RUSSIA = Map.of(MessageSenderImpl.IP_ADDRESS_HEADER, IP_RUSSIA);
-    private static final Map<String, String> MAP_USA = Map.of(MessageSenderImpl.IP_ADDRESS_HEADER, IP_USA);
+//    private static final Map<String, String> MAP_RUSSIA = Map.of(MessageSenderImpl.IP_ADDRESS_HEADER, IP_RUSSIA);
+//    private static final Map<String, String> MAP_USA = Map.of(MessageSenderImpl.IP_ADDRESS_HEADER, IP_USA);
 
     private final GeoService geoService = Mockito.mock(GeoService.class);
     private final LocalizationService localizationService = Mockito.mock(LocalizationService.class);
@@ -41,15 +42,47 @@ class MessageSenderTest {
                 .thenReturn(MESSAGE_USA);
     }
 
-    @Test
-    void sendSuccess() {
-        assertEquals(messageSender.send(MAP_RUSSIA), MESSAGE_RUSSIA);
-        assertEquals(messageSender.send(MAP_USA), MESSAGE_USA);
+    @ParameterizedTest
+    @CsvSource({
+            MessageSenderImpl.IP_ADDRESS_HEADER + "," + IP_RUSSIA + "," + MESSAGE_RUSSIA,
+            MessageSenderImpl.IP_ADDRESS_HEADER + "," + IP_USA + "," + MESSAGE_USA
+    })
+    void sendSuccess(String ipAddressHeader, String ip, String message) {
+        assertEquals(messageSender.send(Map.of(ipAddressHeader, ip)), message);
     }
 
-    @Test
-    void sendUnsuccess() {
-        assertNotEquals(messageSender.send(MAP_RUSSIA), MESSAGE_USA);
-        assertNotEquals(messageSender.send(MAP_USA), MESSAGE_RUSSIA);
+    @ParameterizedTest
+    @CsvSource({
+            MessageSenderImpl.IP_ADDRESS_HEADER + "," + IP_RUSSIA + "," + MESSAGE_USA,
+            MessageSenderImpl.IP_ADDRESS_HEADER + "," + IP_USA + "," + MESSAGE_RUSSIA
+    })
+    void sendUnsuccess(String ipAddressHeader, String ip, String message) {
+        assertNotEquals(messageSender.send(Map.of(ipAddressHeader, ip)), message);
     }
+
+//    @ParameterizedTest
+//    @MethodSource("sendSuccessData")
+//    void sendSuccess(Map<String, String> map, String message) {
+//        assertEquals(messageSender.send(map), message);
+//    }
+//
+//    @ParameterizedTest
+//    @MethodSource("sendUnsuccessData")
+//    void sendUnsuccess(Map<String, String> map, String message) {
+//        assertNotEquals(messageSender.send(map), message);
+//    }
+//
+//    private static Stream<Arguments> sendSuccessData() {
+//        return Stream.of(
+//                arguments(MAP_RUSSIA, MESSAGE_RUSSIA),
+//                arguments(MAP_USA, MESSAGE_USA)
+//        );
+//    }
+//
+//    private static Stream<Arguments> sendUnsuccessData() {
+//        return Stream.of(
+//                arguments(MAP_RUSSIA, MESSAGE_USA),
+//                arguments(MAP_USA, MESSAGE_RUSSIA)
+//        );
+//    }
 }
