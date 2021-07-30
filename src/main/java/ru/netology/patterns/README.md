@@ -3,3 +3,7 @@
 ### HW01. Порождающие шаблоны. Builder, Singleton, Factory Method, Abstract Factory, Prototype
 * [Люди](homework01/task1)
 * [Логгер](homework01/task2)
+
+### HW02. Структурные шаблоны. Adapter, Proxy, Decorator, Facade, Flyweight
+* [Калькулятор](homework02/task1)
+* [Двоичный фасад](homework02/task2)
