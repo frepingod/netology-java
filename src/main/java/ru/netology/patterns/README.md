@@ -7,3 +7,7 @@
 ### HW02. Структурные шаблоны. Adapter, Proxy, Decorator, Facade, Flyweight
 * [Калькулятор](homework02/task1)
 * [Двоичный фасад](homework02/task2)
+
+### HW03. Поведенческие шаблоны. Command, CoR, Observer, Iterator
+* [Бесконечная итерация](homework03/task1)
+* [Лягушка](homework03/task2)
