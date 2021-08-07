@@ -11,3 +11,6 @@
 ### HW03. Поведенческие шаблоны. Command, CoR, Observer, Iterator
 * [Бесконечная итерация](homework03/task1)
 * [Лягушка](homework03/task2)
+
+### HW04. Magics, DRY, SOLID
+* [Магазин](homework04)
