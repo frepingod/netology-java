@@ -2,7 +2,7 @@ package ru.netology.patterns.homework04.supplier;
 
 import ru.netology.patterns.homework04.AllProducts;
 
-public class GoodSupplier extends SupplierImpl {
+public class GoodSupplier extends AbstractSupplier {
 
     public GoodSupplier() {
         products.add(AllProducts.ROYAL_CANIN);

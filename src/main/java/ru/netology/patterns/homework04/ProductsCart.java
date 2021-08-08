@@ -1,4 +1,4 @@
-package ru.netology.patterns.homework04.repository;
+package ru.netology.patterns.homework04;
 
 import ru.netology.patterns.homework04.model.Order;
 import ru.netology.patterns.homework04.model.Product;

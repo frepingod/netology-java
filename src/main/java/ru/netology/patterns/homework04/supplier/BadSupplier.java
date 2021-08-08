@@ -2,7 +2,7 @@ package ru.netology.patterns.homework04.supplier;
 
 import ru.netology.patterns.homework04.AllProducts;
 
-public class BadSupplier extends SupplierImpl {
+public class BadSupplier extends AbstractSupplier {
 
     public BadSupplier() {
         products.add(AllProducts.WHISKAS);

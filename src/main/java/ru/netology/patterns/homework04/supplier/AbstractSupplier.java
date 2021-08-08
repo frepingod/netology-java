@@ -5,7 +5,7 @@ import ru.netology.patterns.homework04.model.Product;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class SupplierImpl implements Supplier {
+public abstract class AbstractSupplier implements Supplier {
 
     protected List<Product> products = new ArrayList<>();
 

@@ -1,7 +1,7 @@
 package ru.netology.patterns.homework04.shop;
 
 import ru.netology.patterns.homework04.AllProducts;
-import ru.netology.patterns.homework04.repository.ProductsCart;
+import ru.netology.patterns.homework04.ProductsCart;
 import ru.netology.patterns.homework04.model.Product;
 import ru.netology.patterns.homework04.supplier.Supplier;
 
