@@ -4,3 +4,7 @@
 * [Межпоточный диалог](homework01/task1)
 * [Межпоточный диалог со счетчиком](homework01/task2)
 * [Калькулятор массива](homework01/task3)
+
+### HW02. Работа с синхронизацией. Synchronization, wait, notify, sleep, lock
+* [Автосалон](homework02/task1)
+* [Продвинутый автосалон](homework02/task2)
