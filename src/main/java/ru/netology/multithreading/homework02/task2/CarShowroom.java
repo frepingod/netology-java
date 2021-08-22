@@ -16,7 +16,7 @@ public class CarShowroom {
 
     private final List<Car> cars = new ArrayList<>();
 
-    public Car sellCar() {
+    public void sellCar() {
         lock.lock();
         try {
             System.out.println(Thread.currentThread().getName() + ": зашел в автосалон");
@@ -25,13 +25,13 @@ public class CarShowroom {
                 condition.await();
             }
             Thread.sleep(WAITING_TIME);
+            cars.remove(0);
             System.out.println(Thread.currentThread().getName() + ": уехал на новеньком авто");
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
             lock.unlock();
         }
-        return cars.remove(0);
     }
 
     public void makeCar() {
