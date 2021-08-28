@@ -10,14 +10,13 @@ public class SpecialistThread extends Thread {
 
     @Override
     public void run() {
-        while (!isInterrupted()) {
+        while (Main.numberOfAnsweredCalls != CallGeneratorThread.NUMBER_OF_CALLS) {
             try {
                 String call = atc.pollCall();
                 if (call != null) {
                     Thread.sleep(3000);
+                    Main.numberOfAnsweredCalls++;
                     System.out.println(call + " done!");
-                } else {
-                    Thread.currentThread().interrupt();
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();

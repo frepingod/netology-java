@@ -2,6 +2,8 @@ package ru.netology.multithreading.homework04.task1;
 
 public class CallGeneratorThread extends Thread {
 
+    public static final int NUMBER_OF_CALLS = 20;
+
     private final Atc atc;
 
     public CallGeneratorThread(Atc atc) {
@@ -10,7 +12,7 @@ public class CallGeneratorThread extends Thread {
 
     @Override
     public void run() {
-        for (int i = 1; i <= 20; i++) {
+        for (int i = 1; i <= NUMBER_OF_CALLS; i++) {
             try {
                 String currCall = "Call" + i;
                 atc.addedCall(currCall);
