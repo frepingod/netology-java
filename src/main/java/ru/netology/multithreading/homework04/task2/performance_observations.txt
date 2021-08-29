@@ -1,0 +1,7 @@
+Наблюдения разнице в производительности между Collections.synchronizedMap(new HashMap<>()) (далее wrapper) и ConcurrentHashMap<>() (далее concurrent):
+
+1. Чем меньше потоков, тем быстрее работают wrapper и concurrent;
+2. У wrapper и у concurrent Get всегда отрабатывает быстрее, чем Put;
+3. При одном потоке Put отрабатывает незначительно быстрее у wrapper, Get - незначительно быстрее у concurrent;
+4. При увеличении потоков Put отрабатывает быстрее у concurrent, примерно в 4-6 раз;
+5. При увеличении потоков Get отрабатывает быстрее у concurrent, примерно в 20+ раз (огромная разница);
