@@ -20,3 +20,7 @@
 ### HW05. [Клиент-серверное взаимодействие. Blocking и Non-Blocking IO](https://github.com/netology-code/jd-homeworks/blob/master/clientserver/README.md)
 * [Тяжелые вычисления](homework05/task1)
 * [Уничтожитель пробелов](homework05/task2)
+
+### HW06. [Функциональное программирование](https://github.com/netology-code/jd-homeworks/blob/master/funcprog/README.md)
+* [Генератор словаря](homework06/task1)
+* [Кадастровый помощник](homework06/task2)
