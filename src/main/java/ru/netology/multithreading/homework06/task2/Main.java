@@ -21,7 +21,7 @@ public class Main {
             int pricePerSquareMeter = scanner.nextInt();
 
             //чистая функция
-            Predicate<LandPlot> predicate = lp -> (lp.getPrice() / (lp.getLength() * lp.getWidth())) < pricePerSquareMeter;
+            Predicate<LandPlot> predicate = lp -> (lp.getPrice() / (lp.getLength() * lp.getWidth())) <= pricePerSquareMeter;
 
             landPlots.stream()
                     .filter(predicate)
