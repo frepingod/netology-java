@@ -24,3 +24,6 @@
 ### HW06. [Функциональное программирование](https://github.com/netology-code/jd-homeworks/blob/master/funcprog/README.md)
 * [Генератор словаря](homework06/task1)
 * [Кадастровый помощник](homework06/task2)
+
+### HW07. [Методологии программирования. TDD. DDD.](https://github.com/netology-code/jd-homeworks/blob/master/tdd_ddd/README.md)
+* [Разработка через тестирование](homework07)
