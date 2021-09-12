@@ -21,16 +21,16 @@
 * [CSV - JSON парсер. XML - JSON парсер. JSON парсер](homework05)
 
 ### HW06. [Тестирование кода и Unit-тесты](https://github.com/netology-code/jd-homeworks/tree/master/junit) (см. тесты для HW14.1 basics)
-* [Использование JUnit + Hamcrest](https://github.com/frepingod/netology-java/blob/main/src/test/java/ru/netology/basics/homework14/task1/ContactsTest.java)
+* [Использование JUnit + Hamcrest](https://github.com/frepingod/netology-java/blob/main/src/test/java/ru/netology/basics/homework14/task1)
 
 ### HW07. [Тестирование программы. Mockito](https://github.com/netology-code/jd-homeworks/tree/master/mocks)
 Тестирование сервиса отправки сообщений
-* [main](homework07/task1)
+* [code](homework07/task1)
 * [test](https://github.com/frepingod/netology-java/blob/main/src/test/java/ru/netology/core/homework07/task1)
 
 Тестирование сервиса медицинских показаний
-* [main](homework07/task2)
-* [test](https://github.com/frepingod/netology-java/blob/main/src/test/java/ru/netology/core/homework07/task2/service/medical/MedicalServiceImplTest.java)
+* [code](homework07/task2)
+* [test](https://github.com/frepingod/netology-java/blob/main/src/test/java/ru/netology/core/homework07/task2/service/medical)
 
 ### HW08. [Основы работы с сетью. Модель OSI](https://github.com/netology-code/jd-homeworks/tree/master/network)
 * [Клиент-серверное приложение с рюшечками](homework08)
