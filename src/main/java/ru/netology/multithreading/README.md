@@ -26,4 +26,6 @@
 * [Кадастровый помощник](homework06/task2)
 
 ### HW07. [Методологии программирования. TDD. DDD.](https://github.com/netology-code/jd-homeworks/blob/master/tdd_ddd/README.md)
-* [Разработка через тестирование](homework07)
+Разработка через тестирование
+* [code](homework07)
+* [test](https://github.com/frepingod/netology-java/tree/main/src/test/java/ru/netology/multithreading/homework07)
