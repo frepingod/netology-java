@@ -11,3 +11,5 @@
 ## Блок №4. [«Шаблоны проектирования»](src/main/java/ru/netology/patterns)
 
 ## Блок №5. [«Многопоточное и функциональное программирование»](src/main/java/ru/netology/multithreading)
+
+## Блок №6. [«Web, Spring & Spring MVC»](src/main/java/ru/netology/web&spring&springmvc)
