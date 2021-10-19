@@ -16,3 +16,6 @@
 ### HW04. [Dependency Lookup, Dependency Injection, IoC, Spring, Application Context](https://github.com/netology-code/jspr-homeworks/tree/master/05_di)
 * [DI annotation](https://github.com/frepingod/netology-servlets/tree/feature/di-annotation) - выполнено в отдельной ветке у HW03.1.CRUD
 * [DI java](https://github.com/frepingod/netology-servlets/tree/feature/di-java) - выполнено в отдельной ветке у HW03.1.CRUD
+
+### HW05. [Spring Web MVC](https://github.com/netology-code/jspr-homeworks/tree/master/06_mvc)
+* [Migration; Данные не удаляются](https://github.com/frepingod/netology-rest-spring-mvc)
