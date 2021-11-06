@@ -5,7 +5,7 @@
 ### HW05. [TestContainers, Kubernetes](https://github.com/netology-code/jd-homeworks/tree/master/containers)
 * [Conditional, Интеграционное тестирование](https://github.com/frepingod/netology-conditional)
 
-### HW02. [Spring boot: назначение, внутреннее устройство](https://github.com/netology-code/jd-homeworks/tree/master/spring_boot_rest)
+### HW02. [REST](https://github.com/netology-code/jd-homeworks/tree/master/spring_boot_rest)
 ### HW03. [Разворачивание Spring Boot приложений (nginx, systemd, firewall, journalctl)](https://github.com/netology-code/jd-homeworks/tree/master/linux)
 ### HW04. [Docker: основы работы](https://github.com/netology-code/jd-homeworks/tree/master/docker)
-* [REST, Прокси на nginx, Dockerfile](https://github.com/frepingod/netology-authorization-service)
+* [Сервис авторизации, Прокси на nginx, Dockerfile](https://github.com/frepingod/netology-authorization-service)
