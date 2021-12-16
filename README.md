@@ -26,3 +26,9 @@
 ## Блок №7. [«Spring Boot, deployment и инфраструктура»](src/main/java/ru/netology/springboot_deployment_infrastructure)
 
 ## Блок №8. [«Хранение данных и организация безопасности»](src/main/java/ru/netology/database_jpa_security)
+
+## Курсовой проект 1. [«Сетевой чат»](https://github.com/frepingod/netology-network-chat)
+
+## Курсовой проект 2. [«Сервис перевода денег»](https://github.com/frepingod/netology-transfer-money)
+
+## Дипломная работа [«Облачное хранилище»](https://github.com/frepingod/netology-cloud-storage)
