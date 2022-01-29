@@ -1,4 +1,4 @@
-# [Домашние задания по курсу «Основы Java»](https://github.com/netology-code/java-homeworks)
+# [Домашние задания по блоку «Основы Java»](https://github.com/netology-code/java-homeworks)
 
 ### HW01. Введение в программирование на Java
 * [Автор программы](homework01/task1)
